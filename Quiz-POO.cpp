@@ -52,3 +52,22 @@ public:
         std::cout << "Total con descuento: " << calcularTotalConDescuento() << std::endl;
     }
 };
+// Función principal del programa
+int main() {
+    // Se crea un objeto de la clase hija
+    ProductoConDescuento producto;
+
+    // Se solicitan los datos del producto
+    producto.solicitarDatos();
+
+    // Se muestra el total sin descuento
+    producto.mostrarTotal();
+
+    // Se solicita el descuento
+    producto.solicitarDescuento();
+
+    // Se muestra el total con descuento aplicado
+    producto.mostrarTotalConDescuento();
+
+    return 0; 
+}
