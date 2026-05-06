@@ -8,5 +8,4 @@ protected:
     std::string name;
     float price;
     float quantity;
-    float
     
