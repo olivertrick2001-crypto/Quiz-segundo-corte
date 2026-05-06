@@ -8,3 +8,23 @@ protected:
     std::string name;
     float price;
     float quantity;
+    public:
+    void solicitarDatos() {
+        std::cout << "Ingrese el nombre del producto: ";
+        std::cin >> name;
+
+        std::cout << "Ingrese el precio: ";
+        std::cin >> price;
+
+        std::cout << "Ingrese la cantidad: ";
+        std::cin >> quantity;
+    }
+
+    float calcularTotal() {
+        return price * quantity;
+    }
+
+    void mostrarTotal() {
+        std::cout << "Total sin descuento: " << calcularTotal() << std::endl;
+    }
+};
